@@ -1,0 +1,10 @@
+{
+  "name": "gem5-rl-dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "git clone https://gem5.googlesource.com/public/gem5 && cd gem5 && scons build/X86/gem5.opt -j4",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}
